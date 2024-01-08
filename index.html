@@ -91,10 +91,10 @@
                         <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <a id="about" class="nav-link">About</a>
                     </li>
 
-                    <li class="nav-item dropdown">
+                    <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Special Dishes
                         </a>
@@ -102,7 +102,7 @@
                           <a class="dropdown-item" href="special-dishes.html">Beef Steak Sauce</a>
                           <a class="dropdown-item" href="special-dishes.html">Salmon Zucchini</a>
                         </div>
-                    </li>
+                    </li> -->
                 </div>
             </ul>
             
@@ -111,10 +111,10 @@
             <ul class="navbar-nav d-flex justify-content-around">
                 <div class="d-flex flex-lg-row flex-column">
                     <li class="nav-item active">
-                        <a class="nav-link" href="menu.html">Menu</a>
+                        <a id="menu" class="nav-link">Menu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="team.html">Team</a>
+                        <a id="team" class="nav-link" >Team</a>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -135,13 +135,25 @@
 		<div class="col-lg-6 hero-left">
 		    <h2 class="display-4 mb-5">Live Music <br> Sports Bar  <br>Delicious Foods!</h2>
 		    <div class="mb-2">
-		    	<a class="btn btn-primary btn-shadow btn-lg" href="#" role="button">Explore Menu</a>
-			    <a class="btn btn-icon btn-lg" href="img/Final (1).mp4" data-featherlight-iframe-allowfullscreen="true">
+		    	<a class="btn btn-primary btn-shadow btn-lg" href="reservation.html" role="button">Reserve Now</a>
+			    <a class="btn btn-icon btn-lg" id="myBtn" data-featherlight-iframe-allowfullscreen="true">
  <!-- data-featherlight="iframe"  -->
 			    	<span class="lnr lnr-film-play"></span>
 			    	Play Video
 			    </a>
 		    </div>
+
+      <div id="videoModal" class="modalVideo">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close"></span>
+    <video id="tagVideo" controls>
+        <source  src="img/Final (1).mp4" type="video/mp4">
+    </video>
+  </div>
+
+</div>      
+
 		   
 		    <ul class="hero-info list-unstyled d-flex text-center mb-0">
 		    	<li class="border-right">
@@ -271,7 +283,7 @@ Welcome to Tag Sports Lounge and Bar, Jhamsikhel's premier entertainment hub in 
     </div>
 </section> -->
 <!-- End of Special Dishes Section -->		<!-- Menu Section -->
-<section id="gtco-menu" class="section-padding">
+<section id="gtco-menu" class="section-padding" >
     <div class="container">
         <div class="section-content">
             <div class="row mb-5">
@@ -596,7 +608,7 @@ Welcome to Tag Sports Lounge and Bar, Jhamsikhel's premier entertainment hub in 
     </div>
 </section>
 <!-- End of Team Section -->		<!-- Reservation Section -->
-<section id="gtco-reservation" class="bg-fixed bg-white section-padding overlay" style="background-image: url(img/reservation-bg.jpg);">
+<!-- <section id="gtco-reservation" class="bg-fixed bg-white section-padding overlay" style="background-image: url(img/reservation-bg.jpg);">
     <div class="container">
         <div class="row">
             <div class="col-lg-5">
@@ -666,7 +678,7 @@ Welcome to Tag Sports Lounge and Bar, Jhamsikhel's premier entertainment hub in 
         </div>
         
     </div>
-</section>
+</section> -->
 <!-- End of Reservation Section -->		<footer class="mastfoot pb-5 bg-white section-padding pb-0">
     <div class="inner container">
          <div class="row">
@@ -717,9 +729,6 @@ Welcome to Tag Sports Lounge and Bar, Jhamsikhel's premier entertainment hub in 
          		</div>
          		
          	</div>
-         	<div class="col-md-12 d-flex align-items-center">
-         		<p class="mx-auto text-center mb-0">Copyright 2019. All Right Reserved. Design by <a href="https://gettemplates.co" target="_blank">GetTemplates</a></p>
-         	</div>
             
         </div>
     </div>
@@ -738,5 +747,6 @@ Welcome to Tag Sports Lounge and Bar, Jhamsikhel's premier entertainment hub in 
 
 	<!-- Main JS -->
 	<script src="js/app.min.js "></script>
+	<script src="js/app.cutsom.js"></script>
 </body>
 </html>
